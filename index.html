@@ -2,31 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Blog preview card</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Blog Preview Card, with Tailwind</title>
 </head>
-<body>
-  <section class="mainCard">
-    <section class="whiteBackground">
-      <div style="display: flex;justify-content: center;padding-bottom: 10px;">
-        <img class="funkyImg" src="assets/images/illustration-article.svg" alt="a funky lil image">
+<body class="bg-[#F4D04E] m-[8px]">
+  <section class="flex justify-center h-[500px]">
+    <section class="bg-[#FFFFFF] w-[350px] h-[445px] rounded-[16px] justify-center outline-[2px] shadow-[7.5px_7.5px] p-[15px_0px_30px_0px]">
+      <div class="flex justify-center pb-[10px]">
+        <img class="w-[90%] rounded-[16px]" src="assets/images/illustration-article.svg" alt="a funky lil image">
       </div>
-      <section style="padding-left: 5%;">
-        <div class="LearningLabel">
-          <h3>Learning</h3>
+      <section class="pl-[5%]">
+        <div class="w-[75px] h-[25px] bg-[#F4D04E] flex justify-center rounded-[4px]">
+          <h3 class="text-[0.85em] mt-[2.5px] font-bold">Learning</h3>
         </div>
-        <p class="publishedDate">Published September 5 2025</p>
-        <h1>HTML & CSS foundations</h1>
-        <p class="bodyText">These languages are the backbone of every website, defning structure, content, and presentation.</p>
-        <div style="margin-top: 20px; display: flex; justify-content: left;">
+        <p class="text-[12.5px] mt-[10px] h-[15px]">Published September 5 2025</p>
+        <h1 class="m-[12px_0px_12px_0px] text-[20px]">HTML & CSS foundations</h1>
+        <p class="text-[16px] mt-[10px] text-[#6B6B6B] leading-tight">These languages are the backbone of every website, defning structure, content, and presentation.</p>
+        <div style="margin-top: 20px;" class="flex justify-start">
           <img src="assets/images/image-avatar.webp" alt="profile picture" width="30px" height="30px">
-          <p style="margin: 7.5px 0 0 7.5px; font-size: 10px; font-family: FigtreeBold;">Jordan McCoy</p>
+          <p style="font-family: FigtreeBold;" class="text-[10px] m-[7.5px_0_0px_7.5px]">Jordan McCoy</p>
         </div>
       </section>
     </section>
-    <!-- Test 4:47pm -->
   </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
